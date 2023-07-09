@@ -1,14 +1,15 @@
 {
   "env": {
     "browser": true,
-    "es2021": true
+    "es2021": true,
+    "jest": true
   },
   "extends": "standard-with-typescript",
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": ["./tsconfig.json"]
   },
-  "rules": {
+  "rules": {    
     "@typescript-eslint/strict-boolean-expressions": "off",
     "@typescript-eslint/prefer-nullish-coalescing": "off",
     "semi": "off",
