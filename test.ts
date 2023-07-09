@@ -1,4 +1,4 @@
-function f (bool?: boolean): number {
+function f (): number {
   return 1;
 }
 
