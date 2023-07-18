@@ -2,7 +2,11 @@
 const config = {
   roots: ['<rootDir>/src'],
   coverageDirectory: 'coverage',
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: [
+    '<rootDir>/tests/**/*.ts',
+    '!**/text/**',
+    '!**/config/**'
+  ],
   testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
