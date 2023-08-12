@@ -6,7 +6,7 @@
   "bin": "./node_modules/.bin",
   "scripts": {
     "test": "jest",
-    "prepare": "husky install && husky add .husky/pre-commit 'lint-staged'"
+    "prepare": "husky install && husky add .husky/pre-commit \"npx lint-staged\""
   },
   "keywords": [],
   "author": "",
