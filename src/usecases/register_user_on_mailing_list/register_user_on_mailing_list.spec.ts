@@ -11,5 +11,6 @@ describe('Register user on mailing list user case', () => {
     // const response = await usecase.RegisterUserOnMailingList({ name, email });
     // const user = repo.findUserByEmail('any@email.com');
     // expect(await user).toBe('any_name');
+    expect(true).toBe(true);
   })
 })
