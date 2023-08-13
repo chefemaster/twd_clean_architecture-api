@@ -15,4 +15,14 @@ describe('Email validation', () => {
     const email = 'any@gmail.com';
     expect(emailValidate(email)).toBeTruthy();
   })
+
+  test('should not accept local part larger than 64 chars', () => {
+    const email = 'l'.repeat(65) + '@gmail.com';
+    expect(emailValidate(email)).toBeFalsy();
+  })
+
+  test('should not accept string part larger than 320 chars', () => {
+    const email = 'c'.repeat(64) + '@' + 'g'.repeat(300) + '.com';
+    expect(emailValidate(email)).toBeFalsy();
+  })
 })
